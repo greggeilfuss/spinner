@@ -1,0 +1,4 @@
+{
+    "server": "localhost:5000",
+    "apiBase": "/rest/api/1.0", 
+}

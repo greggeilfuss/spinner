@@ -1,0 +1,23 @@
+Customers:
+<a *ngFor="let customer of customers; index as i; trackBy: trackByFn">
+    <ul>
+        <li>id: {{customer.customerId}}</li>
+        <li>status: editable {{customer.status}}</li>
+        <li>created: {{customer.creationDateTime}}</li>
+        <li>name: {{customer.name}}</li>
+        <li>street: {{customer.street}}</li>
+        <li>city: {{customer.city}}</li>
+        <li>province/state: {{customer.state}}</li>
+        <li>postal code: {{customer.zipCode}}</li>
+        <li>country: {{customer.country}}</li>
+        <li>phone number: {{customer.phoneNumber}}</li>
+        <li>email: {{customer.emailAddress}}</li>
+    </ul>
+    <ul>
+        <li>Notes:</li>
+        <a *ngFor="let note of notes; index as i; trackBy: trackByFn">
+            <li>{{note}}</li>
+        </a>
+        New Note
+        </ul>
+</a>
